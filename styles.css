@@ -1,3 +1,101 @@
+/* Reset some styles */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(21, 119, 21);
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Home link styling */
+.home a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu links styling */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* Space for content below navbar */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile picture */
 img {
     width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(21, 119, 21);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
 }
