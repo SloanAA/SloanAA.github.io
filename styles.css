@@ -55,7 +55,7 @@ main {
 }
 
 /* Profile picture */
-img {
+#profilePicture {
     width: 300px;
     border-radius: 50%;
     margin-top: 10px;
