@@ -67,10 +67,15 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer-content p {
@@ -80,6 +85,7 @@ footer {
 .footer-content a {
     color: #ffcc00;
     text-decoration: none;
+
 }
 
 .footer-content a:hover {
@@ -98,4 +104,20 @@ footer {
         gap: 10px;
         padding-top: 10px;
     }
+}
+
+.project-list {
+    background-color: #ffcc00;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-list a {
+    justify-self: center;
+    text-align: center;
+    background-color: aqua;
+    height: 300px;
+    margin: 50px;
+    width: 600px;
+    border-radius: 3%;
 }
