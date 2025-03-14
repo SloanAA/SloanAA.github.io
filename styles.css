@@ -1,123 +1,46 @@
-/* Reset some styles */
-body, h1, h3, p {
+:root {
+    --slide-colors: #FF0000;
+    --text-color:#FFFFFF;
+    --background-color: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.slide {
+    background-color: var(--slide-colors);
+    width: 60%;
+    height: 500px;
+    color: var(--text-color);
+    margin: 60px;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--slide-colors);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Navbar styles */
-header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 60px;
     align-items: center;
-    padding: 15px 20px;
-    background-color: rgb(21, 119, 21);
-    color: white;
-    box-sizing: border-box;
+    padding: 0px 10px;
 }
 
-/* Home link styling */
-.home a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Menu styles */
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-/* Menu links styling */
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    white-space: nowrap;
-}
-
-.menu a:hover {
-    color: #ffcc00;
-}
-
-/* Space for content below navbar */
-main {
-    margin-top: 80px;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Profile picture */
-#profilePicture {
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-
-/* Footer styles */
-footer {
-    background-color: rgb(21, 119, 21);
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    margin-top: 50px;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.footer-content p {
-    margin: 5px 0;
-}
-
-.footer-content a {
-    color: #ffcc00;
-    text-decoration: none;
-
-}
-
-.footer-content a:hover {
-    text-decoration: underline;
-}
-
-/* Mobile-friendly adjustments */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-top: 10px;
-    }
-}
-
-.project-list {
-    background-color: #ffcc00;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.project-list a {
-    justify-self: center;
-    text-align: center;
-    background-color: aqua;
-    height: 300px;
-    margin: 50px;
-    width: 600px;
-    border-radius: 3%;
+.nav a{
+    padding: 10px;
 }
