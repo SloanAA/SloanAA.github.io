@@ -1,46 +1,159 @@
 :root {
-    --slide-colors: #FF0000;
-    --text-color:#FFFFFF;
-    --background-color: #EEEEEE;
-    font-family: Arial, Helvetica, sans-serif;
+  --slide-colors: #ff0000;
+  --text-color: #ffffff;
+  --background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+}
+/* ------------------------------------------------- */
+/* Nav bar Section */
+
+header {
+  background-color: var(--slide-colors);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0px 10px;
 }
 
+.nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+/* ------------------------------------------------- */
+/* General Slide  */
+
 .slide {
-    background-color: var(--slide-colors);
-    width: 60%;
-    height: 500px;
-    color: var(--text-color);
-    margin: 60px;
-    padding: 20px;
+  background-color: var(--slide-colors);
+  width: 60%;
+  height: 500px;
+  color: var(--text-color);
+  margin: 200px;
+  padding: 20px;
+  padding-left: 40px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header {
-    background-color: var(--slide-colors);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    padding: 0px 10px;
+h3 {
+  font-size: 30px;
+  margin: 10px;
 }
 
-.nav a{
-    padding: 10px;
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+    font-size: 25px;
+}
+/* ------------------------------------------------- */
+/* Intro Slide */
+
+/* Intro Slide Alignment */
+
+.slideTop {
+  display: flex;
+}
+
+#intro .slideLeft {
+  flex: 1;
+}
+
+#intro .slideRight {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Intro Text Alignment */
+
+#introInfo {
+  margin-top: 30px;
+}
+
+#sloanAbrams {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+#imAnEngineer {
+  margin-top: 10px;
+}
+
+#sloanImage {
+  max-width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+}
+/* ------------------------------------------------- */
+/* About Section */
+#about {
+  display: flex;
+}
+
+.slideLeft {
+flex: 3;
+}
+
+.slideRight {
+flex: 1;
+
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-evenly;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ------------------------------------------------- */
+/* Project Section */
+
+#projects {
+  height: 1800px;
+}
+
+.featuredProject {
+  color: var(--slide-colors);
+  background-color: var(--background-color);
+  height: 400px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.rightProject {
+  text-align: right;
 }
