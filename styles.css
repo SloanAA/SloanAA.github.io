@@ -2,6 +2,8 @@
   --slide-colors: #ff0000;
   --text-color: #ffffff;
   --background-color: #eeeeee;
+  --accent-color: #300000;
+  --accent-color2: #800000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,9 +60,11 @@ a:hover {
   align-items: center;
 }
 
+img {
+    border: 2px solid var(--accent-color)
+}
 h3 {
   font-size: 30px;
-  margin: 10px;
 }
 
 h1 {
@@ -139,6 +143,83 @@ justify-content: space-evenly;
     height: 200px;
 }
 
+/* ------------------------------------------------- */
+/* Work Section */
+
+/* Work Slide Alignment */
+#work {
+    display: flex;
+}
+
+#work .slideLeft {
+    flex: 3;
+}
+
+#work .slideRight {
+    flex: 5;
+
+}
+
+
+/* Work Slider Section */
+.job {
+    height: 80px;
+    display: flex;
+}
+.slider {
+    margin-left: 30px;
+    width: 5px;
+    height: 80px;
+    background-color: var(--accent-color);
+}
+
+.job1 .slider {
+    background-color: var(--accent-color2);
+}
+
+.job button {
+    text-align: left;
+    height: 80px;
+    width: 320px;
+    padding-left: 30px;
+    border: none;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--slide-colors);
+    font-size: 30px;
+}
+
+.job button:hover{
+    background-color: var(--accent-color2);
+    color: var(--slide-colors);
+}
+
+/* Work Right Slide Alignment */
+
+
+.slideRight .companyName {
+    flex: 1;
+    margin: 0px;
+    margin-top: 20px;
+
+}
+
+.slideRight .jobRole {
+    flex: 2;
+    margin: 0px;
+
+}
+
+.slideRight .jobInfo {
+    flex: 5;
+    margin: 0px 20px;
+}
+
+#work .slideRight a {
+    font-size: 30px;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
 /* ------------------------------------------------- */
 /* Project Section */
 
